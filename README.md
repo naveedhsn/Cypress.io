@@ -62,7 +62,8 @@ or
 	
 npx mochawesome-merge cypress/report/mochawesome-report/*.json | out-file -encoding ascii cypress/report/output.json
 	
-step6:  npx marge cypress/report/output.json --reportDir ./ --inline
+### step6:  
+npx marge cypress/report/output.json --reportDir ./ --inline
 
 ==============================================
 
