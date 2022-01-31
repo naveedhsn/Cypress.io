@@ -19,11 +19,14 @@ npx cypress open
 
 ## Creating Report:
 
-step1:  npm install mochawesome --save-dev
+### step1:  
+npm install mochawesome --save-dev
 
-step2:  npm install mochawesome-merge --save-dev
+### step2:  
+npm install mochawesome-merge --save-dev
 
-step3: add following reports configuration in cypress.json
+### step3: 
+add following reports configuration in cypress.json
 
 { 
 
@@ -49,9 +52,11 @@ step3: add following reports configuration in cypress.json
   
 }
 
-step4:  npx cypress run --reporter mochawesome
+### step4:  
+npx cypress run --reporter mochawesome
 
-step5:  npx mochawesome-merge cypress/report/mochawesome-report/*.json ＞ cypress/report/output.json
+### step5:  
+npx mochawesome-merge cypress/report/mochawesome-report/*.json ＞ cypress/report/output.json
 
 or
 	
