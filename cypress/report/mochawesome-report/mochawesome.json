@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-31T15:37:59.802Z",
+    "end": "2022-01-31T15:39:04.832Z",
+    "duration": 65030,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b4a9c2a8-2cf1-4391-9a64-139586fa37fb",
+      "title": "",
+      "fullFile": "cypress/integration/cypressF1.js",
+      "file": "cypress/integration/cypressF1.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d65d70fd-d7eb-43b6-8986-6e4916b86b9a",
+          "title": "Cypress.io Feature#1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Feature",
+              "fullTitle": "Cypress.io Feature#1 Feature",
+              "timedOut": null,
+              "duration": 19344,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.cypress.io/features');",
+              "err": {},
+              "uuid": "81dd5485-7042-4fd2-aeb4-4740f423a0bc",
+              "parentUUID": "d65d70fd-d7eb-43b6-8986-6e4916b86b9a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scroll To Footer: Section By Section",
+              "fullTitle": "Cypress.io Feature#1 Scroll To Footer: Section By Section",
+              "timedOut": null,
+              "duration": 14623,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.TestRunnerGui-sc-1bdra1y-2').scrollIntoView();\ncy.wait(2000);\ncy.get('.FeaturesList-sc-6bwsh3-0').scrollIntoView();\ncy.wait(2000);\ncy.get('.styled__Wrapper-sc-5ujzgx-0').scrollIntoView();\ncy.wait(2000);\ncy.get('main > :nth-child(5)').scrollIntoView();\ncy.wait(2000);\ncy.get('main > :nth-child(6)').scrollIntoView();\ncy.wait(2000);\ncy.get('main > :nth-child(7)').scrollIntoView();\ncy.wait(2000);\ncy.get('.Footer-sc-1b1goem-0').scrollIntoView();\ncy.wait(2000);",
+              "err": {},
+              "uuid": "8f9dd3ad-b365-43f7-8ab5-5ae3da99c8a8",
+              "parentUUID": "d65d70fd-d7eb-43b6-8986-6e4916b86b9a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion: Text",
+              "fullTitle": "Cypress.io Feature#1 Assertion: Text",
+              "timedOut": null,
+              "duration": 8625,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h1').should('contain', 'A test runner built for humans.'); //section_01\ncy.get('h2').should('contain', 'Cypress makes these 4 tasks amazingly simple:'); //section_02\ncy.get('h3').should('contain', 'Setting up tests'); //section_03\ncy.get('h3').should('contain', 'Writing tests'); //section_04\ncy.get('h3').should('contain', 'Running tests'); //section_05\ncy.get('h3').should('contain', 'Debugging'); //section_06\ncy.get('h2').should('contain', 'naveed'); //section_07\ncy.get('h2').should('contain', 'Supported Browsers'); //section_08\ncy.get('h2').should('contain', 'How is this possible?'); //section_09\ncy.get('h2').should('contain', 'Ready to try Cypress?'); //section_10\ncy.get('h3').should('contain', 'Read our docs'); //section_11\ncy.get('h5').should('contain', 'Get Started'); //section_12",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '[ <h2.Hero-ByLine.mb-0>, 6 more... ]' to contain 'naveed'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '[ <h2.Hero-ByLine.mb-0>, 6 more... ]' to contain 'naveed'\n    at Context.eval (https://www.cypress.io/__cypress/tests?p=cypress\\integration\\cypressF1.js:134:18)",
+                "diff": null
+              },
+              "uuid": "d7e504a9-701e-4e2c-b320-f786f678dc2a",
+              "parentUUID": "d65d70fd-d7eb-43b6-8986-6e4916b86b9a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Assertion: Button",
+              "fullTitle": "Cypress.io Feature#1 Assertion: Button",
+              "timedOut": null,
+              "duration": 4986,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').should('contain', 'Sign up');\ncy.get('a').should('contain', 'Read Cross-Browser Testing Guide');\ncy.get('a').should('contain', 'Learn about how Cypress works');\ncy.get('button').should('contain', 'npm install cypress');\ncy.get('a').should('contain', 'Terms of Use');\ncy.get('a').should('contain', 'Privacy');",
+              "err": {},
+              "uuid": "69deae71-8a35-4c57-bff6-f9f60a91a9a2",
+              "parentUUID": "d65d70fd-d7eb-43b6-8986-6e4916b86b9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "81dd5485-7042-4fd2-aeb4-4740f423a0bc",
+            "8f9dd3ad-b365-43f7-8ab5-5ae3da99c8a8",
+            "69deae71-8a35-4c57-bff6-f9f60a91a9a2"
+          ],
+          "failures": [
+            "d7e504a9-701e-4e2c-b320-f786f678dc2a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 47578,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "embeddedScreenshots": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
