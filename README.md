@@ -3,16 +3,19 @@ Automation script for two features of cypress site
 
 ### Whole Process:
 
-> Create a work folder 
-> 
-> Open VS code and open a work folder
-> 
-> Open terminal and give following commands:
-	npm init -y
+Create a work folder 
+
+Open VS code and open a work folder
+
+Open terminal and give following commands:
+
+npm init -y
 	
-	npm install cypress
+npm install cypress
 	
-	npx cypress open
+npx cypress open
+
+====================================================
 
 ## Creating Report:
 
@@ -50,13 +53,13 @@ step4:  npx cypress run --reporter mochawesome
 
 step5:  npx mochawesome-merge cypress/report/mochawesome-report/*.json ＞ cypress/report/output.json
 
-	or
+or
 	
-	npx mochawesome-merge cypress/report/mochawesome-report/*.json | out-file -encoding ascii cypress/report/output.json
+npx mochawesome-merge cypress/report/mochawesome-report/*.json | out-file -encoding ascii cypress/report/output.json
 	
 step6:  npx marge cypress/report/output.json --reportDir ./ --inline
 
-==================================================================================================
+==============================================
 
 # Solution of the error:
 
